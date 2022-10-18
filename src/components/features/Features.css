@@ -1,0 +1,40 @@
+.features {
+    background-color: #f8f8f8;
+}
+
+.container-features{
+    padding: 12rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.feature{
+ display: flex;
+ flex-direction: column;
+ padding-top: 2rem;
+}
+
+.feature-h2 {
+    padding-top: 2rem;
+}
+
+.feature-p {
+    padding-top: 2rem;
+}
+@media screen and (max-width:960px){
+    .container-features{
+        padding: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width:480px){
+    .container-features{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+   
+}
